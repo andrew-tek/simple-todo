@@ -3,7 +3,7 @@ import { createContainer } from 'meteor/react-meteor-data';
 import ReactDOM from 'react-dom';
 import { Meteor } from 'meteor/meteor';
 import { Tasks } from '../api/tasks.js';
-import AccountsUIWrapper from './AccountsUIWrapper.jsx';
+import AccountsUIWrapper from './AccountUIWrapper.jsx';
 import Task from './Task.jsx';
 
 // App component - represents the whole app
@@ -67,16 +67,8 @@ toggleHideCompleted() {
       ref="textInput"
       placeholder="Type to add new tasks"
     />
-  </form> : ''
-}
+  </form>
 
-          <form className="new-task" onSubmit={this.handleSubmit.bind(this)} >
-              <input
-                type="text"
-                ref="textInput"
-                placeholder="Type to add new tasks"
-              />
-</form>
         </header>
 
         <ul>
